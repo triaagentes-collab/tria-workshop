@@ -1,0 +1,22 @@
+{
+  "enabledMcpjsonServers": ["tria", "chrome-devtools"],
+  "permissions": {
+    "allow": [
+      "mcp__tria",
+      "mcp__chrome-devtools",
+      "Read",
+      "Edit",
+      "Write",
+      "WebFetch",
+      "Bash(curl:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(base64:*)"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Read(./.env*)"
+    ]
+  }
+}

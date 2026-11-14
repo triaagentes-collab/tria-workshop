@@ -1,0 +1,6 @@
+# identidade do participante (fica só no computador dele)
+.tria/
+.env
+.env.*
+node_modules/
+.DS_Store
