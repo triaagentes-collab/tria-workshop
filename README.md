@@ -37,7 +37,6 @@ Você não precisa saber programar.
 Pronto. O Claude prepara tudo sozinho e começa as perguntas.
 - Se ele pedir permissão para alguma coisa, clique em **Permitir**.
 - Quando um bloco terminar, espere a Cris e escreva **`próximo`**.
-- O **código do evento** está no telão.
 - No fim da Parte 1 o Claude **para e espera o William**. Quando ele liberar no palco, responda **`sim, quero continuar`**.
 
 > Também funciona baixar o ZIP (**Code → Download ZIP**), abrir a pasta `tria-workshop-main` no Claude e escrever **oi**.
@@ -52,11 +51,10 @@ Pronto. O Claude prepara tudo sozinho e começa as perguntas.
 | O que aconteceu | O que fazer |
 |---|---|
 | O Claude explicou o link em vez de começar | Escreva: **Pode começar o workshop TRIA.** |
-| "Código do evento incorreto" | Confira o código no telão (letras e números). |
 | "Ainda não foi liberado" | A Parte 2 só abre quando o William liberar no palco. Aguarde e escreva de novo. |
 | A conversa caiu | Abra de novo na mesma pasta e cole o link de novo (ou escreva **`oi`**): o Claude continua de onde parou. |
 
 ## Para a equipe TRIA
 - Cada participante recebe um **prefixo** (ex.: `limpezacarla_k7`). Tudo o que ele cria leva esse prefixo: tabelas `limpezacarla_k7_*` no banco, sites `tria-limpezacarla-k7-*` e repositórios `tria-limpezacarla-k7-*`.
-- Nenhuma chave fica neste repositório. O acesso passa pelo **porteiro** (`https://tria-porteiro.tria-workshop.workers.dev`), que confere o código do evento e a liberação da Parte 2.
+- Nenhuma chave fica neste repositório. O acesso passa pelo **porteiro** (`https://tria-porteiro.tria-workshop.workers.dev`), que controla a entrada e a liberação da Parte 2.
 - As regras completas do Claude estão no [`CLAUDE.md`](CLAUDE.md). O Canvas original está em [`docs/`](docs/).

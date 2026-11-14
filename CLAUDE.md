@@ -60,12 +60,11 @@ Fonte original: `docs/CANVAS-TRIA_raio-x-da-empresa_v1.md`. Siga os blocos na or
 1. "Qual é o nome da sua empresa?" (sem empresa → o nome da pessoa)
 2. "Qual é o seu nome, e o que você faz, em uma frase?"
 3. "Pra quem você faz isso, e quantas pessoas trabalham com você (contando você)?"
-4. "Qual é o **código do evento** que está no telão?"
 
-Então chame a ferramenta **`entrar`** do servidor `tria` com `nome`, `empresa` (vazio se não tiver) e `codigo_evento`.
+Então chame a ferramenta **`entrar`** do servidor `tria` com `nome` e `empresa` (vazio se não tiver). A entrada é **livre**: não pergunte código do evento.
 - Deu certo → salve o resultado em `.tria/participante.json` (campos: nome, empresa, prefixo, chave, evento, supabase_url, supabase_anon_key) e crie `projetos/<prefixo>/canvas.md` com o Bloco 0.
 - Diga só: "Pronto, você está dentro! O seu código no workshop é **<prefixo>**. Tudo o que construirmos vai levar esse nome."
-- Código errado → peça para conferir o telão. Não tente adivinhar.
+- Só se o porteiro responder "Código do evento incorreto": pergunte o código que está no telão e chame `entrar` de novo com `codigo_evento`.
 - Se a ferramenta `entrar` não existir ou falhar por conexão, use o `curl` da seção 5 ("Sem o servidor tria").
 
 Fecha o bloco.
@@ -257,7 +256,7 @@ Sempre passe `chave` = valor de `.tria/participante.json`.
 
 | Ferramenta | Para quê | Parte |
 |---|---|---|
-| `entrar(nome, empresa, codigo_evento)` | cria o prefixo e a chave | 1 (Bloco 0) |
+| `entrar(nome, empresa)` | cria o prefixo e a chave (entrada livre; `codigo_evento` só se o porteiro pedir) | 1 (Bloco 0) |
 | `meu_projeto(chave)` | lista tabelas, sites e repositórios da pessoa | 1 e 2 |
 | `fase2_liberada(chave)` | diz se o William liberou a Parte 2 | trava |
 | `banco_sql(chave, sql)` | roda SQL com as permissões da pessoa | 2 |
